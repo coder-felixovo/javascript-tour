@@ -13,6 +13,7 @@
     "rules": {
         "semi": [2, "never"],
         "no-var": "error",
-        "no-sparse-arrays": "off"
+        "no-sparse-arrays": "off",
+        "no-compare-neg-zero": "warn"
     }
 }
