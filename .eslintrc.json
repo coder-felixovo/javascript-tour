@@ -11,7 +11,7 @@
         "sourceType": "module"
     },
     "rules": {
-        "semi": [2, "never"],
+        "semi": ["off", "never"],
         "no-var": "error",
         "no-sparse-arrays": "off",
         "no-compare-neg-zero": "warn"
