@@ -14,6 +14,7 @@
         "semi": ["off", "never"],
         "no-var": "error",
         "no-sparse-arrays": "off",
-        "no-compare-neg-zero": "warn"
+        "no-compare-neg-zero": "warn",
+        "no-unused-vars": "error"
     }
 }
