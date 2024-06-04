@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>default-binding</title>
+</head>
+<body>
+  <script>
+    var foo = 'foo'
+
+    function printFoo() {
+      console.log(this.foo); // "foo"
+      console.log(printFoo === window.printFoo); // true
+    }
+
+    function printFooInStrict() {
+      'use strict'
+      console.log(this); // undefined
+      console.log(printFooInStrict === window.printFooInStrict); // true
+    }
+
+    printFoo();
+    printFooInStrict();
+
+    (() => {
+      console.log(this.foo); // "foo"
+      console.log(this === window); // true
+    })();
+  </script>
+</body>
+</html>
